@@ -2,122 +2,28 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# The Wanderer's Path
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+[🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
 
 
-### Definition lists can be used with HTML syntax.
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+## Project Overview
+"The Wanderer's Path" is a 2D top-down RPG built with Python and the Pyxel engine. 
+The player can explore the map, battle enemies, and uncover hidden areas in a world
+that dynamically responds to real-world weather and time.
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+## Key Features
+* **Custom Collision Logic:** Built utilizing AABB (Axis-Aligned Bounding Box) logic for accurate sprite interaction.
+* **Dynamic Weather System:** The local version integrates with the OpenWeatherMap API to pull real-world data and dynamically alter in-game conditions.
+* **Browser Deployment:** Packaged into a self-contained `.pyxapp` format utilizing WebAssembly for immediate browser playability.
 
-```
-The final element.
-```
+## Web Player
+To make this project playable on the web, I had to come up with a solution for browser security restrictions. Web browsers block standard Python network libraries (like `requests`) from reaching out to external APIs like OpenWeatherMap. I refractored the game to run without the weather simulation in response. So that is unfortunately abscent from the web player, but still available on the local game.
+
+## Local Setup Instructions
+To run the complete version of the game (including live weather features) on your local machine:
+1. Ensure Python 3.13 and Pyxel 2.8.2 are installed.
+2. Clone the main repository.
+3. Create a `credentials.py` file in the root directory and add your OpenWeatherMap API key.
+4. Run `python run.py`.
