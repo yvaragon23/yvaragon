@@ -6,7 +6,7 @@ layout: default
 
 [🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
 
-
+![Gameplay Screenshot](gameplay.png)
 
 ## Project Overview
 "The Wanderer's Path" is a 2D top-down RPG built with Python and the Pyxel engine. 
