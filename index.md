@@ -32,6 +32,6 @@ The complete codebase for *The Wanderer's Path* is hosted in a dedicated reposit
 To run the complete version of the game (including live weather features) on your local machine:
 1. Clone the repository linked above.
 2. Ensure Python 3.13 and Pyxel 2.8.2 are installed.
-3. Create a `credentials.py` file in the root directory and add your OpenWeatherMap API key.
+3. Update the `credentials.py` file in the root directory and add your OpenWeatherMap API key.
 4. Feel free to also change the city in the weather instance under the 'game.py' file.
 5. Run `python run.py`.
