@@ -21,9 +21,13 @@ that dynamically responds to real-world weather and time.
 ## Web Player
 To make this project playable on the web, I had to come up with a solution for browser security restrictions. Web browsers block standard Python network libraries (like `requests`) from reaching out to external APIs like OpenWeatherMap. I refractored the game to run without the weather simulation in response. So that is unfortunately abscent from the web player, but still available on the local game.
 
-## Local Setup Instructions
+## Source Code & Local Setup
+The complete codebase for *The Wanderer's Path* is hosted in a dedicated repository to maintain a clean architecture. 
+
+[📁 View the Source Code Repository Here](https://github.com/yvaragon23/the-wanderers-path)
+
 To run the complete version of the game (including live weather features) on your local machine:
-1. Ensure Python 3.13 and Pyxel 2.8.2 are installed.
-2. Clone the main repository.
+1. Clone the repository linked above.
+2. Ensure Python 3.13 and Pyxel 2.8.2 are installed.
 3. Create a `credentials.py` file in the root directory and add your OpenWeatherMap API key.
 4. Run `python run.py`.
