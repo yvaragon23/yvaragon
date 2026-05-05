@@ -3,7 +3,7 @@ layout: default
 ---
 
 # About Me
-I am a computer science student with a specific interest in applied math and computer graphics. I am preparing to transfer to a more rigorous university program to deepen my technical foundation. My ultimate goal is to engineer advanced visual effects and/or simulation technologies in the film industry.
+I am a computer science student with a specific interest in applied math and computer graphics. I am preparing to transfer to a more rigorous university program to deepen my technical foundation. My ultimate goal is to engineer advanced visual effects and/or simulation technologies for the film industry.
 
 # The Wanderer's Path
 
@@ -19,7 +19,7 @@ that dynamically responds to real-world weather and time.
 ## Key Features
 * **Custom Collision Logic:** Built utilizing AABB (Axis-Aligned Bounding Box) logic for accurate sprite interaction.
 * **Dynamic Weather System:** The local version integrates with the OpenWeatherMap API to pull real-world data and dynamically alter in-game conditions.
-* **Browser Deployment:** Packaged into a self-contained `.pyxapp` format utilizing WebAssembly for immediate browser playability.
+* **Browser Deployment:** Packaged into a self-contained `.html` format utilizing WebAssembly for immediate browser playability.
 
 ## Web Player
 To make this project playable on the web, I had to come up with a solution for browser security restrictions. Web browsers block standard Python network libraries (like `requests`) from reaching out to external APIs like OpenWeatherMap. I refractored the game to run without the weather simulation in response. So that is unfortunately abscent from the web player, but still available on the local game.
@@ -33,4 +33,5 @@ To run the complete version of the game (including live weather features) on you
 1. Clone the repository linked above.
 2. Ensure Python 3.13 and Pyxel 2.8.2 are installed.
 3. Create a `credentials.py` file in the root directory and add your OpenWeatherMap API key.
-4. Run `python run.py`.
+4. Feel free to also change the city in the weather instance.
+5. Run `python run.py`.
