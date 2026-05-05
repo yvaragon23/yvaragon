@@ -8,11 +8,9 @@ I am a computer science student with a specific interest in applied math and com
 # The Wanderer's Path
 
 ## Project Overview
-"The Wanderer's Path" is a 2D top-down RPG built with Python and the Pyxel engine. 
+"The Wanderer's Path" is a 2D top-down RPG built with Python and the Pyxel game engine. 
 The player can explore the map, battle enemies, and uncover hidden areas in a world
 that dynamically responds to real-world weather and time.
-
-[🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
 
 ![Gameplay Screenshot](gameplay.png)
 
@@ -20,6 +18,8 @@ that dynamically responds to real-world weather and time.
 * **Custom Collision Logic:** Built utilizing AABB (Axis-Aligned Bounding Box) logic for accurate sprite interaction.
 * **Dynamic Weather System:** The local version integrates with the OpenWeatherMap API to pull real-world data and dynamically alter in-game conditions.
 * **Browser Deployment:** Packaged into a self-contained `.html` format utilizing WebAssembly for immediate browser playability.
+
+[🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
 
 ## Web Player
 To make this project playable on the web, I had to come up with a solution for browser security restrictions. Web browsers block standard Python network libraries (like `requests`) from reaching out to external APIs like OpenWeatherMap. I refractored the game to run without the weather simulation in response. So that is unfortunately abscent from the web player, but still available on the local game.
