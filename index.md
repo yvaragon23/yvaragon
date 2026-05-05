@@ -2,16 +2,19 @@
 layout: default
 ---
 
+# About Me
+I am a computer science student with a specific interest in applied math and computer graphics. I am preparing to transfer to a more rigorous university program to deepen my technical foundation. My ultimate goal is to engineer advanced visual effects and/or simulation technologies in the film industry.
+
 # The Wanderer's Path
-
-[🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
-
-![Gameplay Screenshot](gameplay.png)
 
 ## Project Overview
 "The Wanderer's Path" is a 2D top-down RPG built with Python and the Pyxel engine. 
 The player can explore the map, battle enemies, and uncover hidden areas in a world
 that dynamically responds to real-world weather and time.
+
+[🎮 Play the Web Version Here!](https://yvaragon23.github.io/the-wanderers-path/)
+
+![Gameplay Screenshot](gameplay.png)
 
 ## Key Features
 * **Custom Collision Logic:** Built utilizing AABB (Axis-Aligned Bounding Box) logic for accurate sprite interaction.
